@@ -1,0 +1,21 @@
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Date of Birth</th>
+            <th>Gender</th>
+            <th>Type of Service</th>
+            <th>General Comments</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let patient of patients" [appMostVisits]="patient === mostVisitsPatient">
+            <td>{{ patient.name }}</td>
+            <td>{{ patient.date_of_birth | customDate }}</td>
+            <td>{{ patient.gender.name }}</td>
+            <td>{{ patient.service_name}}</td>
+            <td>{{ patient.comments }}</td>
+        </tr>
+    </tbody>
+</table>

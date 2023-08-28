@@ -1,0 +1,25 @@
+
+<div>
+    <label for="name">Name of patient:</label>
+    <input type="text" id="name" [(ngModel)]="patient.name">
+
+    <label for="dob">Date of birth:</label>
+    <input type="date" id="dob" [(ngModel)]="patient.date_of_birth" value="patient.dateOfBirth | customDate">
+
+    <label for="gender">Gender:</label>
+    <select id="gender" [(ngModel)]="patient.gender_id">
+        <option value="1">Male</option>
+        <option value="2">Female</option>
+    </select>
+
+    <label for="service">Type of service:</label>
+    <select id="service" [(ngModel)]="patient.service_id">
+        <option value="1">Outpatient</option>
+        <option value="2">Inpatient</option>
+    </select>
+
+    <label for="comments">General comments:</label>
+    <textarea id="comments" [(ngModel)]="patient.comments"></textarea>
+
+    <button (click)="savePatient()">Save</button>
+</div>
