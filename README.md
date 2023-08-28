@@ -26,7 +26,7 @@ Before you begin, make sure you have the following prerequisites installed:
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/medbook-dev-frontend.git
+   git clone https://github.com/IanOmbija/medbook-dev-frontend.git
    cd medbook-dev-frontend
    ```
 
